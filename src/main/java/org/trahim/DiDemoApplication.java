@@ -4,12 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.trahim.controllers.ConstructorInjectedController;
 import org.trahim.controllers.GetterInjectedController;
 import org.trahim.controllers.MyController;
 import org.trahim.controllers.PropertyInjectedController;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"org.trahim"})
 public class DiDemoApplication {
 
     public static void main(String[] args) {
